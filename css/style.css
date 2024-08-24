@@ -3,8 +3,8 @@
 :root{
    --main-color:#DA2C32;
    --light-color:#666;
-   --light-bg:#eee;
-   --white:#fff;
+   --light-bg:#ff8b8b;
+   --white:hwb(182 64% 21%);
    --black:#303030;
    --border:.1rem solid var(--light-color);
    --box-shodow:0 .5rem 1rem rgba(0,0,0,.1);
