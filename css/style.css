@@ -4,7 +4,7 @@
    --main-color:#DA2C32;
    --light-color:#666;
    --light-bg:#ff8b8b;
-   --white:hwb(182 64% 21%);
+   --white:hwb(180 91% 3%);
    --black:#303030;
    --border:.1rem solid var(--light-color);
    --box-shodow:0 .5rem 1rem rgba(0,0,0,.1);
@@ -15,7 +15,7 @@
    margin: 0; padding: 0;
    box-sizing: border-box;
    outline: none; border: none;
-   text-decoration: none;
+   text-decoration: none;f
 }
 
 *::selection{
