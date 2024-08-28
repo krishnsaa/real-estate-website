@@ -3,7 +3,7 @@
 :root{
    --main-color:#DA2C32;
    --light-color:#666;
-   --light-bg:#ff8b8b;
+   --light-bg:#ece3e3;
    --white:hwb(180 91% 3%);
    --black:#303030;
    --border:.1rem solid var(--light-color);
