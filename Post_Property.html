@@ -4,9 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>View Property</title>
-
-
+   <title>Post Property</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
 
@@ -66,7 +64,9 @@
                </li>
             </ul>
          </div>
-<a href="search.html" class=" text-4xl " id="btred" ><button >Search your Home</button></a> 
+         <div>            
+<a href="search.html" class=" text-4xl " id="btred" ><button >Search your Home</button></a>
+ </div>
          <ul>
             <li><a href="#">saved <i class="far fa-heart"></i></a></li>
             <li><a href="#">account <i class="fas fa-angle-down"></i></a>
@@ -80,72 +80,96 @@
    </nav>
 
 </header>
+ 
 
 
-<section class="view-property">
 
-   <div class="details">
-      <div class="thumb">
-         <div class="big-image">
-            <img src="images/house-img-1.webp" alt="">
-         </div>
-         <div class="small-images">
-            <img src="images/house-img-1.webp" alt="">
-            <img src="images/hall-img-1.webp" alt="">
-            <img src="images/kitchen-img-1.webp" alt="">
-            <img src="images/bathroom-img-1.webp" alt="">
-         </div>
-      </div>
-      <h3 class="name">MyHome</h3>
-      <p class="location"><i class="fas fa-map-marker-alt"></i><span>pratap nagar, Jaipur</span></p>
-      <div class="info">
-         <p><i class="fas fa-tag"></i><span>15 lac</span></p>
-         <p><i class="fas fa-user"></i><span>Krishnsaa (owner)</span></p>
-         <p><i class="fas fa-phone"></i><a href="tel:6350249973">6350249973</a></p>
-         <p><i class="fas fa-building"></i><span>flat</span></p>
-         <p><i class="fas fa-house"></i><span>sale</span></p>
-         <p><i class="fas fa-calendar"></i><span>10-11-2024</span></p>
-      </div>
-      <h3 class="title">details</h3>
-      <div class="flex">
-         <div class="box">
-            <p><i>rooms :</i><span>2 BHK</span></p>
-            <p><i>status :</i><span>ready to move</span></p>
-            <p><i>bedroom :</i><span>3</span></p>
-            <p><i>bathroom :</i><span>2</span></p>
-            <p><i>balcony :</i><span>1</span></p>
-         </div>
-         <div class="box">
-            <p><i>carpet area :</i><span>750sqft</span></p>
-            <p><i>age :</i><span>3 years</span></p>
-            <p><i>furnished :</i><span>semi-furnished</span></p>
-         </div>
-      </div>
-      <h3 class="title">amenities</h3>
-      <div class="flex">
-         <div class="box">
-            <p><i class="fas fa-check"></i><span>lifts</span></p>
-            <p><i class="fas fa-check"></i><span>security guards</span></p>
-            <p><i class="fas fa-times"></i><span>play ground</span></p>
-            <p><i class="fas fa-check"></i><span>gardens</span></p>
-            <p><i class="fas fa-check"></i><span>water supply</span></p>
-            <p><i class="fas fa-check"></i><span>power backup</span></p>
-         </div>
-         <div class="box">
-            <p><i class="fas fa-check"></i><span>parking area</span></p>
-            <p><i class="fas fa-times"></i><span>gym</span></p>
-            <p><i class="fas fa-check"></i><span>shopping mall</span></p>
-            <p><i class="fas fa-check"></i><span>hospital</span></p>
-            <p><i class="fas fa-check"></i><span>schools</span></p>
-            <p><i class="fas fa-check"></i><span>market area</span></p>
-         </div>
-      </div>
-      <h3 class="title">description</h3>
-      <p class="description">Best ready to Move house . 5 km away from jaipur airport .  </p>
-         <input type="submit" value="save property" name="save" class="inline-btn">
-   </div>
 
-</section>
+<section class="filters" style="padding-bottom: 0;">
+
+    <form action="https://formsubmit.co/krishnsaa@gmail.com" method="post">
+       <div id="close-filter"><i class="fas fa-times"></i></div>
+       <h3>Give your property details</h3>
+          
+          <div class="flex">
+            <div class="box">
+                <p>Enter Your Name</p>
+                <input type="text" name="name" required maxlength="50" placeholder="Enter Your Name" class="input">
+            </div>
+            <div class="box">
+                <p>Enter Your Mobile no.</p>
+                <input type="number" name="mob" required maxlength="10" placeholder="Enter Your Mobile no." class="input">
+            </div>
+            <div class="box">
+                <p>Enter Your Aadhar no.</p>
+                <input type="number" name="name" required maxlength="12" placeholder="Enter Your Aadhar no." class="input">
+            </div>
+             <div class="box">
+                <p>Enter full address of property</p>
+                <input type="text" name="location" required maxlength="50" placeholder="Full Address" class="input">
+             </div>
+             <div class="box">
+                <p>offer type</p>
+                <select name="offer" class="input" required>
+                   <option value="sale">sale</option>
+                   <option value="resale">resale</option>
+                   <option value="rent">rent</option>
+                </select>
+             </div>
+             <div class="box">
+                <p>property type</p>
+                <select name="type" class="input" required>
+                   <option value="flat">flat</option>
+                   <option value="house">house</option>
+                   <option value="shop">shop</option>
+                </select>
+             </div>
+
+             <div class="box">
+                <p>Fixed price for your property</p>
+                <input type="number" name="price" required maxlength="20" placeholder="Price" class="input">
+            </div>
+             <div class="box">
+                <p>status</p>
+                <select name="status" class="input" required>
+                   <option value="ready to move">ready to move</option>
+                   <option value="under construction">under construction</option>
+                </select>
+             </div>
+             <div class="box">
+                <p>furnished</p>
+                <select name="furnished" class="input" required>
+                   <option value="unfurnished">unfurnished</option>
+                   <option value="furnished">furnished</option>
+                   <option value="semi-furnished">semi-furnished</option>
+                </select>
+             </div>
+             <div class="box" style="padding-top: 20px;">
+                <p>Add 2-3 images </p>
+                <input
+                  class="file-uploader"
+                  type="file"
+                  onchange="upload()"
+                  accept="image/*"
+                />
+                <input
+                class="file-uploader"
+                type="file"
+                onchange="upload()"
+                accept="image/*"
+              />
+              <input
+              class="file-uploader"
+              type="file"
+              onchange="upload()"
+              accept="image/*"
+            />
+              </div>
+          </div>
+          <input type="submit" value="post property" name="post" class="btn">
+    </form>
+ 
+ </section>
 
 
 
@@ -178,9 +202,6 @@
 
    </section>
 </footer>
-
-
-
 
 <script src="js/script.js"></script>
 

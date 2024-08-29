@@ -5,7 +5,7 @@
    --light-color:#666;
    --light-bg:#ece3e3;
    --white:hwb(180 91% 3%);
-   --black:#303030;
+   --black:#7e3f3f;
    --border:.1rem solid var(--light-color);
    --box-shodow:0 .5rem 1rem rgba(0,0,0,.1);
 }
@@ -946,14 +946,6 @@ section{
    color: var(--main-color);
 }
 
-
-
-
-
-
-
-
-/* media queries  */
 
 @media (max-width:991px){
 
