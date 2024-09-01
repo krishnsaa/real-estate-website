@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
 
 :root{
-   --main-color:#DA2C32;
+   --main-color:#33677e;
    --light-color:#666;
-   --light-bg:#ece3e3;
+   --light-bg: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+   background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
    --white:hwb(180 91% 3%);
-   --black:#7e3f3f;
+   --black:#2c4046;
    --border:.1rem solid var(--light-color);
    --box-shodow:0 .5rem 1rem rgba(0,0,0,.1);
 }
@@ -179,11 +180,10 @@ section{
    padding: 10px 20px;
    border: none;
    cursor: pointer;
-   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #btred:hover {
-   background-color:#DA2C32; /* Background color on hover */
+   background-color:#33677e; /* Background color on hover */
    color: rgb(255, 255, 255); /* Text color on hover */
 }
 
